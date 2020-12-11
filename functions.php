@@ -26,20 +26,19 @@ function infocus_setup() {
             'chat',
         )
     );
-    
-}
-adds_action( 'after_setup_theme', 'infocus_setup' );
 
-// Theme varables
+}
+add_action( 'after_setup_theme', 'infocus_setup' );
+
+// Theme variables
 $theme_dir = get_template_directory();
 
 // Enqueue vendor styles & scripts
-requite $theme_dir . '/inc/vendor/bs-styles.php';
-requite $theme_dir . '/inc/vendor/bs-scripts.php';
-
+// require $theme_dir . '/inc/vendor/bs-styles.php';
+// require $theme_dir . '/inc/vendor/bs-scripts.php';
 
 // Enqueue theme styles & scripts
 require $theme_dir . '/inc/enqueue-styles.php';
-require $theme_dir . '/inc/enqueue-scripts.php';
+// require $theme_dir . '/inc/enqueue-scripts.php';
 
 
